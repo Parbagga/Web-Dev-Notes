@@ -1,0 +1,34 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align:center;
+}
+
+
+
+#result{
+    display: none;
+
+
+}
+#error{
+    display: none;
+}
+
+.first{
+    display: none;
+}
+.second{
+    display: none;
+}
+.third{
+    display: none;
+}
+.fail{
+    display: none;
+}
+.pass{
+    display: none;
+}

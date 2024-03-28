@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positioning</title>
+    <style>
+        *{padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        height:3000px;
+    }
+       .container{
+        height: 1000px;
+        width: 500px;
+        margin: 30px auto;
+        background-color: darkslategray;
+        position: relative;
+        top:-10px;
+       }
+         
+       .box{
+        height: 100px;
+        width: 100px;
+        background-color: white;
+        display: inline-block;
+        border: 2px black solid;
+        margin: 10px auto; 
+       }
+       .box_outer{
+        height: 100px;
+        width: 100px;
+        background-color: black;
+        display: inline-block;
+        border: 2px black solid;
+        margin: 10px auto; 
+        color: white;
+       }
+       #outer_one{
+        position: fixed;
+        left: 150px;
+       }
+       #outer_two{
+        position: relative;
+        top:40px;
+        left:300px;
+
+       }
+    
+       #box1{
+        position: absolute;
+        top:100px;
+       }
+       #box2{
+        position:sticky;
+        top:100px;
+       }
+       #box3{
+        position: relative;
+        top:200px;
+       }
+    
+    </style>
+</head>
+<body>
+    <div id="outer_one" class="box_outer">Outer1</div>
+    <div id="outer_two" class="box_outer">outer2</div>
+    <Div class="container">
+        <div id="box1" class="box">box1 </div>
+        <div id="box2" class="box">box2 </div>
+        <div id="box3" class="box">Box3 </div>
+    </Div>
+</body>
+</html>

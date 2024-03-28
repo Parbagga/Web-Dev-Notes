@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+    <style>
+         .container{
+            display: flex;
+         } 
+           h3,p{
+            color: #444;
+            text-align: center;
+            /* text-shadow: 1.5px 1.5px #333; */
+           }
+         .box{
+            padding: 1rem;
+            margin: 1rem;
+            color: #fff;
+            /* off-set x / offset Y / color  */
+            box-shadow:  10px 10px teal;
+
+             /* off-set x / offset Y /blur-radius/ color  */
+            box-shadow:  5px 5px 20px teal;
+          
+             /* off-set x / offset Y /blur-radius /spread -radius/ color  */
+             box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.3);
+
+              /* inset / off-set x / offset Y / color  */
+              box-shadow: inset -3px -3px 10px teal;
+
+              /* multiple shaodws */
+              box-shadow: 3px 3px 4px rgb(20, 24, 24), -3px -3px 20px olive,11px 10px 20px orange,-20px -30px 40px teal;
+            }
+
+    </style>
+</head>
+<body>
+     <div class="container">
+        <div class="box">
+            <h3>heading</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam dolore debitis distinctio doloribus sed commodi laborum neque at possimus. Dignissimos ducimus accusantium non. Nihil mollitia culpa accusantium quod itaque asperiores!</p>
+        </div>
+        <div class="box">
+            <h3>heading</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam dolore debitis distinctio doloribus sed commodi laborum neque at possimus. Dignissimos ducimus accusantium non. Nihil mollitia culpa accusantium quod itaque asperiores!</p>
+        </div>
+        <div class="box">
+            <h3>heading</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam dolore debitis distinctio doloribus sed commodi laborum neque at possimus. Dignissimos ducimus accusantium non. Nihil mollitia culpa accusantium quod itaque asperiores!</p>
+        </div>
+     </div>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .container {
+            height: 80%;
+            width: 50%;
+            position: relative;
+        }
+
+        .left {
+            height: 100%;
+            width: 50%;
+            position: absolute;
+            left: 0;
+        }
+
+        .right {
+            height: 100%;
+            width: 50%;
+            position: absolute;
+            border-radius: 10px;
+            right: 0;
+            background: url(./faraz-ahanin-6ke17wK-GFI-unsplash\ \(1\).jpg) no-repeat center center/ cover;
+        }
+
+        .form {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .left h1 {
+            font-size: 36px;
+            margin: 150px 0 10px;
+            text-align: center;
+
+        }
+
+        .form input {
+            width: 100%;
+            height: 30px;
+            margin-right: 20px;
+            background: none;
+            outline: none;
+            border: none;
+            border-bottom: 2px black solid;
+        }
+
+        .form i {
+            font-size: 25px;
+            margin-left: 20px;
+            border-bottom: 2px black solid
+        }
+
+        ::placeholder {
+            font-size: 13px;
+            color: #888;
+            text-transform: uppercase;
+        }
+
+        .btn {
+            width: 100%;
+            height: 40px;
+            margin: 20px 20px;
+            background: none;
+            border: 2px black solid;
+            border-radius: 20px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bttn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn:hover {
+            color: rgb(113, 100, 100);
+        }
+
+        @media only screen and (max-width:500px) {
+
+            .left {
+                width: 100%;
+                height: 50vh;
+                color: white;
+            }
+
+            ::placeholder {
+                color: white;
+            }
+
+            .form i,
+            .form input {
+                border-bottom: 2px white solid;
+            }
+
+            .btn {
+                color: white;
+                border: 1px white solid;
+            }
+
+            .right {
+                width: 100%;
+                height: 50vh;
+                z-index: -10;
+            }
+
+            /* .right{
+                background: url(./faraz-ahanin-6ke17wK-GFI-unsplash\ \(1\).jpg) no-repeat center center/cover;
+            } */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+               <div class="wrapper">
+
+                   
+                   <h1>Login</h1>
+                   <div class="form">
+                       <i class="fas fa-user"></i>
+                       <input placeholder="Username" id="username" type="text">
+                    </div>
+                    <div class="form">
+                        <i class="fas fa-lock"></i>
+                        <input placeholder="Password" id="password" type="password">
+                    </div>
+                    <div class="bttn">
+                        
+                        <button class="btn">Login</button>
+                    </div>
+                </div>
+            </div>
+            <div class="right"></div>
+        </div>
+    </div>
+</body>
+
+</html>

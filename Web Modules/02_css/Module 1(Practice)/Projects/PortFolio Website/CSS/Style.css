@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=Montserrat:wght@100;500&family=Open+Sans:wght@500&family=Raleway:wght@500&family=Roboto:ital,wght@0,500;1,500&display=swap");
+
+:root {
+  --primary-color: #f25287;
+  --font-color: #fff;
+  --secondary-color: #333;
+  --bg-white-color:#f4f4f4;
+}
+
+/* core designing */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: var(--secondary-color);
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 30px 0;
+  top: 0;
+  z-index: 2;
+}
+
+.logo {
+  height: 40px;
+  font-size: 24px;
+}
+
+.logo i {
+  margin-right: 20px;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar .menu li a {
+  display: block;
+  color: var(--primary-color);
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+}
+
+.navbar .menu li a:hover {
+  opacity: 0.7;
+}
+
+.toggler {
+  background: none;
+  border: none;
+  outline: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 5;
+  display: none;
+}
+.toggler i {
+  line-height: 30px;
+  border: 1px solid var(--primary-color);
+  display: block;
+  color: var(--primary-color);
+}
+
+.sticky {
+  background-color: var(--font-color);
+  padding: 18px;
+  transition: 1s;
+}
+
+.sticky .navbar-menu a {
+  color: var(--primary-color);
+}
+
+.sticky .toggler i {
+  background: var(--primary-color);
+  color: var(--font-color);
+}
+
+/* Home */
+
+.home {
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1561112078-7d24e04c3407?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+    no-repeat center center/cover;
+  background-attachment: fixed;
+}
+
+
+.home .container {
+  width: 100%;
+  color: var(--font-color);
+}
+
+
+.home .container .row {
+  margin-right: 0;
+}
+.home .home-content .text-1 {
+  font-size: 24px;
+}
+.home .home-content .text-2 {
+  font-size: 80px;
+  font-weight: 600;
+}
+.home .home-content .text-3 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.home .home-content .btn {
+  font-size: 25px;
+  transition: all 0.3s ease;
+}
+
+.home .home-content .text-3 span {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+
+
+/* About */
+
+#about {
+  padding: 100px 0;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-content img {
+  width: 350px;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+.about-txt{
+    flex:1;
+}
+
+.about-txt h3{
+    margin: 10px 0;
+    color: #666;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.about-txt h3 span:nth-child(1):after,
+.about-txt h3 span:nth-child(2):after,
+.about-txt h3 span:nth-child(3):after{
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: #666;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 13px;
+}
+
+.about-txt p{
+    font-size: 17px;
+    text-align: justify;
+    line-height: 26px ;
+    margin-top: 20px;
+}
+
+
+/* services */
+
+#services{
+  padding: 100px 0;
+
+}
+
+.service-content{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service{
+  width: calc(33% - 20px);
+  text-align: center;
+  background-color: #222;
+  margin: 20px 0;
+  padding: 40px 20px;
+  cursor: pointer;
+  transition: .3s linear;
+}
+
+.service p{
+  text-align: justify;
+
+}
+.service .icon{
+  color: #f25287;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.service h4{
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.service:hover{
+  background-color: #f25287;
+}
+
+.service:hover .icon{
+  color: #fff;
+
+}
+
+
+/* Skills */
+
+
+#skills{
+  padding: 100px 0;
+}
+
+.skills-content{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.skills-content .coulmn{
+  width: calc(50% - 30px);
+  text-align: center;
+
+}
+
+.skills-content .coulmn .text{
+  font-size: 26px;
+  margin-bottom: 15px;
+
+}
+
+.skills-content .coulmn p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.skill-info{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.progress-bar{
+  height: 5px;
+  margin-top: 14px;
+  background-color: #ddd;
+  position: relative;
+  border-radius: 3px;
+}
+
+.progress-bar:after{
+  content: "";
+  position: absolute;
+  background-color: #f25287;
+  height: 5px;
+  bottom: 0 ;
+  left: 0;
+  border-radius:3px ;
+}
+
+.html:after{
+  width: 90%;
+}
+.css:after{
+  width: 80%;
+}
+.js:after{
+  width: 70%;
+}
+.react:after{
+  width: 60%;
+}
+.mongodb:after{
+  width: 80%;
+}
+.php:after{
+  width: 90%;
+}

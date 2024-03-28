@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframes</title>
+    <style>
+        body {
+            background: #333;
+        }
+
+        .box {
+            background: #fff;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            animation-name: animate2;
+            animation-duration: 10s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes animate1 {
+
+            from {
+                top: 0;
+            }
+
+            to {
+                width: 600px;
+                background-color: red;
+                top: 200px;
+            }
+
+
+        }
+
+        @keyframes animate2 {
+
+            0% {
+                left: 0px;
+                top: 0px;
+                background-color: white;
+                border-radius: 0 0 0 0;
+                box-shadow: 3px 3px 20px white;
+
+            }
+
+            25% {
+                left: 300px;
+                top: 0px;
+                background-color: red;
+                border-radius: 50% 0 0 0;
+                box-shadow: 3px 3px 20px red;
+            }
+
+            50% {
+                left: 300px;
+                top: 300px;
+                background-color: green;
+                border-radius: 50% 50% 0 0;
+                box-shadow: 3px 3px 0px green;
+            }
+
+            75% {
+                left: 0px;
+                top: 300px;
+                background-color: red;
+                border-radius: 50% 50% 50% 0;
+                box-shadow: 3px 3px 20px red;
+            }
+
+            100% {
+                left: 0px;
+                top: 0px;
+                background-color: white;
+                border-radius: 50% 50% 50% 50%;
+                box-shadow: 3px 3px 20px white;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="box">
+
+    </div>
+</body>
+
+</html>

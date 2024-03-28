@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result viewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="main">
+
+
+        <form class="form">
+
+            <h2> Result viewer</h2>
+
+            <div>
+                <label for="firstName">First Name:</label>
+                <input type="name" placeholder="Enter Your Name" class="firstName">
+            </div>
+
+            <div>
+                <label for="lastName">Last Name:</label>
+                <input type="name" placeholder="Enter Your Last Name" class="lastName">
+            </div>
+
+            <div>
+                <label for="rollNumber">Roll No:</label>
+                <input type="number" placeholder="Enter Your Roll Number" name="rollNumber" class="rollNumber">
+            </div>
+
+            <p>Please enter your Marks Below</p>
+
+            <div>
+                <label for="english">English:</label>
+                <input type="number" name="english" class="english">
+            </div>
+            <div>
+                <label for="hindi">Hindi:</label>
+                <input type="number" name="hindi" class="hindi">
+            </div>
+            <div>
+                <label for="Math">Math:</label>
+                <input type="number" name="math" class="math">
+            </div>
+            <div>
+                <label for="science">Science:</label>
+                <input type="number" name="science" class="science">
+            </div>
+            <div>
+                <label for="sanskrit">Sanksrit:</label>
+                <input type="number" name="sanskrit" class="sanskrit">
+            </div>
+            <div>
+                <label for="socialScience">Social Science:</label>
+                <input type="number" name="socialScience" class="socialScience">
+            </div>
+            <div>
+                <label for="arts">Arts:</label>
+                <input type="number" name="arts" class="arts">
+            </div>
+
+            <input type="button" value="Submit" id="submit">
+            <input type="reset" value="reset">
+        </form>
+    </div>
+
+
+    <section id="result">
+        <div>
+            <p>
+                Welcome
+                <span class="message"></span> !
+            </p>
+            <p>Your roll number is <span class="rollNum"></span>
+            </p>
+            <p>Your Maximum marks <span class="total"></span>
+            </p>
+            <p>Your percentage is <span class="percent1"></span>
+            </p>
+
+            <div>
+                <div class="fail">
+                    <p>Sorry You have failed</p>
+                </div>
+                <div class="pass">
+                    <p>You have passed the examination</p>
+                </div>
+                <div class="third">
+                    <p>You got Third Division</p>
+                </div>
+                <div class="second">
+                    <p>You got Second Division</p>
+                </div>
+                <div class="first">
+                    <p>You got first Division</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+    </section>
+
+    <section id="error">
+    <p>Please enter Details</p>
+</section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

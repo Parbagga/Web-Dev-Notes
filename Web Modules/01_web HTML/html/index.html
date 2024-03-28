@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus neque hic laudantium, possimus soluta sunt quisquam repudiandae quia expedita illum repellendus doloremque. Labore rem fugiat quaerat excepturi voluptatum nihil. Delectus.</p>
+    <!-- comment -->
+    <h1>this is a heading</h1>
+    <h2>this is a heading</h2>
+    <h3>this is a heading</h3>
+    <h4>this is a heading</h4>
+    <h5>this is a heading</h5>
+    <h6>this is a heading</h6>
+
+    <hr>
+    <!-- type= circle square -->
+    <ul type="square">
+        <li>vnbvnbvnnv</li>
+        <li>vnbvnbvnnv</li>
+        <li>vnbvnbvnnv</li>
+        <li>vnbvnbvnnv</li>
+        <li>vnbvnbvnnv</li>
+        <li>vnbvnbvnnv</li>
+        <li>vnbvnbvnnv</li>
+    </ul>
+    <ol type="i">
+        <li>bnbnb</li>
+        <li>bnbnb</li>
+        <li>bnbnb</li>
+        <li>bnbnb</li>
+        <li>bnbnb</li>
+        <li>bnbnb</li>
+        <li>bnbnb</li>
+    </ol>
+    <!-- nesting -->
+    <ul>
+        <li>basic</li>
+        <ul>
+            <li>word</li>
+            <li>excel</li>
+            <li>ppt</li>
+        </ul>
+        <li>web</li>
+        <ul>
+            <li>front</li>
+            <ul>
+                <li>html</li>
+                <li>css</li>
+                <li>js</li>
+            </ul>
+            <li>back</li>
+            <ul>
+                <li>server</li>
+                <li>encription</li>
+                <li>DB></li>
+            </ul>
+        </ul>
+        <li>accounts</li>
+        <ul>
+            <li>mod1</li>
+            <li>mod1</li>
+            <li>mod1</li>
+            <li>mod1</li>
+            <li>mod1</li>
+        </ul>
+        <li>graphic</li>
+    </ul>
+
+    <!-- table -->
+    <table border="1px" bgcolor="yellow" cellpadding="10" cellspacing="10">
+        <tr><td>web</td><td>animation</td><td>graphics</td></tr>
+        <tr><td>html</td><td>flash</td><td>photoshop</td></tr>
+        <tr><td>css</td><td>animate</td><td>cdr</td></tr>
+    </table>
+    <br>
+    <table border="1px" bgcolor="yellow" cellpadding="10" cellspacing="10">
+        <tr>
+            <th>web</th>
+            <td>animation</td>
+            <td>graphics</td>
+        </tr>
+        <tr>
+            <td rowspan="2">html</td>
+            <td>flash</td>
+            <td>photoshop</td>
+        </tr>
+        <tr>
+            <td colspan="2">animate</td>
+        </tr>
+    </table>
+    <br>
+
+    <!-- forms -->
+    <form action="test.php">
+       <label for="name">Name</label> <input id="name" type="text" size="30" maxlength="20"><br>
+       <label for="age">age</label> <input id="age" type="number"><br>
+       <label for="password">password</label> <input id="password" type="password" size="30" maxlength="20"><br>
+       <label for="email">email</label> <input id="email" type="email" placeholder="enter email" size="30" maxlength="20"><br>
+        <input type="color"><br>
+        <br>
+        <small>review our product</small><br>
+        <input type="range" min="0" max="100" step="1">
+       <br>
+    
+       <h3>do u like html?</h3>
+
+       <label for="yes">yes</label><input type="radio" name="like" value="yes">
+       <label for="no">no</label><input type="radio" name="like" value="no">
+
+       <h3>wich programming languages do u know?</h3>
+        <label for="php">php</label><input type="checkbox" value="php" name="lang">
+        <label for="java">java</label><input type="checkbox" value="java" name="lang">
+        <label for="c++">c++</label><input type="checkbox" value="c++" name="lang">
+        <label for="py">py</label><input type="checkbox" value="py" name="lang">
+
+
+        <h3>tell us about yourself</h3>
+        <textarea cols="40" rows="5"></textarea>
+
+        <br>
+
+       <input type="date">
+       <h3>please send a pic</h3>
+       <input type="file">
+       <br>
+       <button>Submit</button>
+       <input type="submit" value="done">
+       <a href="process.php">send</a>
+       <a href="process.php">send</a>
+       <a href="process.php">send</a>
+       <a href="process.php">send</a>
+
+    </form>
+
+    <br>
+    <br>
+    <img src="../images/1.jpg" alt="car" width="300px" height="250px">
+    <img src="../images/2.jpg" alt="car" width="300px" height="250px">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+</html>

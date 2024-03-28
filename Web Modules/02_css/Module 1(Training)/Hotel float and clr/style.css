@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Arizonia&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arizonia&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+:root {
+  --primary-color: #2f2fa2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* util */
+a {
+  text-decoration: none;
+  color: white;
+}
+.mobile-view {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+/* styling */
+body {
+  background: url("./images/photo-1571677465484-2dd540924245.jpeg") no-repeat
+    center/cover;
+  height: 100vh;
+  width: 100vw;
+  background-attachment: fixed;
+}
+
+body:after {
+  content: "";
+  height: 110%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  bottom: -1000;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+header {
+  /* backdrop-filter: blur(10px); */
+  position: sticky;
+  top: 0;
+  z-index: 98;
+}
+
+header .container {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1100px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  border: 1px solid black;
+  outline: none;
+  border: none;
+}
+
+.logo {
+  font-family: "Arizonia", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  transition: 0.3s ease;
+}
+
+.logo:hover {
+  color: #ffc300;
+}
+
+.des-view a {
+  display: inline-block;
+  font-size: 25px;
+  padding: 10px;
+  margin-left: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.des-view a:hover {
+  /* background: rgba(255, 255, 255, 0.9); */
+  color: #ffc300;
+  /* border-radius: 10px; */
+}
+
+main {
+  height: 100vh;
+}
+
+/* showcase */
+
+.showcase.container{
+  width: 1100px;
+  margin: 0 auto;
+}
+.showcase {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  /* overflow: hidden; */
+  transition: 0.5s ease-out;
+}
+
+.showcase.not-active{
+  opacity: 0;
+}
+
+.showcase h1 {
+  font-size: 4rem;
+  padding-top: 3em;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+.showcase h1 span {
+  font-size: 2em;
+  font-weight: 200;
+  color: #ffc300;
+}
+
+.showcase button {
+  padding: 10px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.4em;
+  border: none;
+  font-weight: 400;
+  transition: 0.4s ease-in-out;
+}
+
+.showcase button:hover {
+  background: #ffc300;
+}
+
+.showcase p {
+  padding: 2em 2em;
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+/* about */
+
+.about{
+  color: #fff;
+  position: absolute;
+  top: 30%;
+  left: 16%;
+  font-size: 1.7em;
+  z-index: 98;
+  transition: 0.5s ease-out;
+}
+
+.left,
+.right{
+  width: 50%;
+  height: 100%;
+}
+
+.left h1 span{
+  font-size: 1.5em;
+  color: #ffc300;
+}
+
+
+.left h1,
+.left p{
+  text-align: center;
+  padding-top:1rem;
+  
+}
+.left p{
+  text-align: justify;
+  line-height: 1.1; 
+}
+
+
+
+.about .container{
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.right img{
+  width: 100%;
+  height: 100%;
+   display: block;
+   border-radius: 50%;
+}
+
+.left{
+  float: left;
+  clear: right;
+}
+
+.right{
+  float: right;
+  padding: 1em;
+}
+
+.about.not-active{
+  opacity: 0;
+}
+
+
+
+
+/* footer */
+
+footer {
+  height: 90px;
+  background-color: black;
+  opacity: 0.9;
+  font-family: "lato", sans-serif;
+  font-size: 2em;
+  font-weight: 900;
+  display: grid;
+  place-items: center;
+}
+
+
+#about.is-active{
+  opacity: 0;
+}

@@ -1,0 +1,247 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  line-height: 1.3em;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+a,
+h1 {
+  color: #f5f7f8;
+}
+
+h1,
+h2,
+h3 {
+    font-size:1.9em;
+}
+p {
+  padding: 20px;
+}
+
+/* utility classes */
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: auto;
+  padding: 0 20px;
+}
+.bg-primary {
+  background: #495e57;
+  color: #f5f7f8;
+}
+.btn {
+  background: #f4ce14;
+  margin: 10px auto;
+  padding: 20px;
+  display: inline-block;
+  border-radius: 20px;
+  font-size: 1.2em;
+}
+.btn:hover {
+  color: #f4ce14;
+}
+.text-primary {
+  color: #e7cd4b;
+  font-size: 1.7em;
+}
+.bg-light {
+  background: #f5f7f8;
+  color: #45474b;
+}
+.bg-dark {
+  background: #333435;
+  color: #f5f7f8;
+}
+
+.btn-light {
+  background: #f5f7f8;
+  color: #45474b;
+}
+.btn-dark {
+  background-color: #45474b;
+  color: #f5f7f8;
+}
+
+.clr {
+  clear: both;
+}
+/* navbar */
+
+#navbar {
+  background-color: #45474b;
+  overflow: auto;
+}
+
+#navbar h1 {
+  float: left;
+  padding-top: 20px;
+}
+#navbar ul {
+  float: right;
+}
+#navbar ul li {
+  float: left;
+  list-style: none;
+}
+#navbar ul li a {
+  display: block;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current {
+  background: #333435;
+  color: #f4ce14;
+}
+.booking {
+  font-weight: 900;
+}
+/* Showcase */
+#showcase {
+  height: 600px;
+  text-align: center;
+  background: url("./images/hotel3.jpg") no-repeat center center/cover;
+}
+
+#showcase h1 {
+  padding-top: 170px;
+}
+
+/* info */
+#info {
+  height: 400px;
+}
+
+#info .left {
+  height: 100%;
+  width: 50%;
+  float: left;
+  background: url("./images/hotel2.jpg") no-repeat center center/cover;
+  min-height: 100%;
+}
+#info .right {
+  height: 100%;
+  width: 50%;
+  float: right;
+  text-align: center;
+}
+
+#info .right h2 {
+  padding-top: 30px;
+}
+/* features */
+.box {
+  float: left;
+  width: 33.3%;
+  padding: 50px;
+  text-align: center;
+  overflow: hidden;
+}
+.box h2 {
+  padding-top: 10px;
+}
+
+/* footer */
+.footer {
+  width: 100%;
+  text-align: center;
+  font-size: 1.3em;
+  background: #45474b;
+  color: #f5f7f8;
+}
+
+/* about-info */
+#about-info {
+  max-height: 600px;
+}
+.info-left {
+  width: 50%;
+  float: left;
+  text-align: center;
+  padding-top: 50px;
+}
+.info-right {
+  width: 50%;
+  float: right;
+  padding: 100px;
+}
+#about-info .info-right img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: #f4ce14 2px solid;
+}
+
+/* testimonials */
+#testimonials {
+    text-align: center;
+  max-height: 600px;
+  background: url("./images/hotel4.jpg") no-repeat center center/cover;
+}
+#testimonials h1{
+    padding-top: 30px;
+}
+
+.testimonial{
+    background: #f4ce14;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    opacity: 0.9;
+}
+.testimonial img {
+    width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 20px;
+  border: 1px solid #333435;
+
+}
+
+/* contact form */
+#contact-form{
+    max-height: 800px;
+}
+
+#contact-form label{
+    display: block;
+    margin-top: 5px;
+}
+#contact-form input,
+#contact-form textarea {
+    height: 30px;
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    border: 1px solid #d1dde2 ;
+    
+}
+.form-group{
+    padding: 10px 0;
+}
+#contact-form h1{
+    color: #333435;
+    text-align: center;
+}
+#contact-form p{
+    padding: 10px 0;
+}
+
+#contact-form button{
+   width: 100%;
+}
+#contact-form input:focus,
+#contact-form textarea:focus{
+  outline: none;
+  border-color:#f7c08a ;
+}
+#contact-form textarea{
+  height: 200px;
+}

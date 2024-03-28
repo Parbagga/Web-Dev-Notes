@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Montserrat:wght@100;500&family=Open+Sans:wght@500&family=Raleway:wght@500&family=Roboto:ital,wght@0,500;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+a {
+  text-decoration: none;
+}
+
+.list{
+    margin: 0.5rem 0;
+    list-style: none;
+}
+.list li{
+    padding: 0.5rem 0;
+    border-bottom: #444 dotted 1px;
+}
+/* utility classes */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.text-primary {
+  color: #93cb52;
+}
+.text-center{
+    text-align: center;
+}
+.l-heading {
+  font-size: 4rem;
+  line-height: 1.1;
+  margin: 0.75rem;
+}
+.m-heading{
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+.bg-light{
+    background: #fff;
+    color: #333;
+}
+.bg-dark{
+    background: #333;
+    color: #fff;
+}
+.bg-primary{
+   background: #93cb52;
+   color: #fff;
+}
+.lead{
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+.btn {
+  display: inline-block;
+  background: #93cb52;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  box-shadow: 3px 3px 10px #333;
+}
+.btn-dark{
+  background: #333;
+  color: #fff;
+}
+.btn:hover {
+  background: #5d8430;
+}
+
+.py-1{
+    padding: 1.5rem 0;
+}
+.py-2{
+    padding: 2rem 0;
+}
+.py-3{
+    padding: 3rem 0;
+}
+
+.p-1{
+    padding: 1.5rem;
+}
+.p-2{
+    padding: 2rem;
+}
+.p-2{
+    padding: 3rem;
+}
+
+/* Navbar */
+#navbar {
+  background: #333;
+  color: #f4f4f4;
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 1rem;
+}
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+#navbar ul li a {
+  color: #fff;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+#navbar ul li a:hover {
+  background-color: #93cb52;
+  border-radius: 5px;
+}
+
+#showcase {
+  height: 100vh;
+  color: #fff;
+  background: #333 url("./images/zach-lezniewicz-Fy7V732QO20-unsplash.jpg")
+    no-repeat center center/cover;
+}
+
+#showcase .showcase-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* overlay */
+  position: absolute;
+  background: rgba(0, 0, 0,0.4);
+  right: 0;
+  left: 0;
+  top: 65.6px;
+  bottom: 0; 
+}
+
+/* What we do */
+
+#what .items{
+    display: flex;
+    padding: 1rem;
+}
+#what .items .item{
+   flex: 1;
+   text-align: center;
+   padding: 1rem;
+}
+#what .items .item i{
+   background: #93cb52;
+   padding: 1rem;
+   border-radius: 50%;
+   margin-bottom: 1rem;
+   box-shadow: 3px 3px 10px #333;
+  
+}
+
+/* who we are */
+#who{
+    display: flex;
+}
+#who div{
+    flex: 1;
+}
+#who .who-img{
+    background: url("./images/people.jpg")no-repeat center center/cover;
+}
+
+/* clients */
+
+#clients .items{
+  display: flex;
+  justify-content: space-evenly;
+}
+#clients .items img{
+  display: inline-block;
+  margin: auto;
+  width: 8rem;
+  height: 100%;
+  border-radius: 2px;
+  box-shadow: 3px 3px 10px #333;
+}
+
+/* contact form */
+
+#contact{
+  display: flex;
+}
+
+#contact .contact-form {
+  flex: 1;
+}
+#contact .contact-form label{
+  display: block;
+}
+#contact .contact-form textarea,
+#contact .contact-form input{
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+#contact .contact-form .form-group{
+  margin: 0.75rem 0;
+}
+
+#contact .contact-form textarea{
+  height: 200px;
+}
+
+
+
+
+

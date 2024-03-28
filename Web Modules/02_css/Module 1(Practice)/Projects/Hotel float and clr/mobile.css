@@ -1,0 +1,53 @@
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.container h1{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7em 1.3em;
+}
+
+.container ul{
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out ;
+    /* display: none; */
+    
+}
+.container ul li a{
+    display: block;
+    margin: 0;
+    padding: 0;   
+}
+
+.hamburger{
+    visibility: visible;
+}
+
+.hide{
+    visibility: hidden;
+}
+
+.show{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

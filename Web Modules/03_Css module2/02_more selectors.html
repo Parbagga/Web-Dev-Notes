@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More selectors</title>
+
+    <style>
+        /* if div is direct parent of p */
+        div > p{
+            background: #ddd;
+        }
+
+
+        /* if p is right after div */
+   div + p{
+    background: #333;
+
+    color: #fff;
+   }
+          /* if p is preceded by a Ul with same parent */
+        ul ~ p{
+            background: #ff0000;
+            color: #fff;
+        }
+/* target attribute */
+        a[target]{
+            background: #ddd;
+        }
+   /* targett specific attribute value * */
+   input[type = "text"],
+   input[type = "email"]{
+    width: 100%;
+   }
+   </style>
+</head>
+<body>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quaerat?
+
+            </p>
+
+            <ul>
+                <li>item1</li>
+                <li>item2</li>
+                <li>item3</li>
+            </ul>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, nulla. Ea dicta itaque amet tempore. Mollitia magnam quisquam, et modi at animi est minima libero iure ipsa atque ratione odit.
+            </p>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo iure maiores earum obcaecati a totam voluptatem modi, ab quibusdam quae nobis eveniet iusto commodi dignissimos explicabo ex fugiat consequatur fuga!
+        </p>
+
+        <a href="#">Page 1</a>
+        <a href="#">Page 2</a>
+        <a href="https://www.google.com" target="_blank">Google</a>
+
+
+        <br><br>
+
+        <form >
+             <input type="text" placeholder="text">
+             <input type="email" placeholder="email">
+             <input type="submit" value="submit">
+
+        </form>
+
+</body>
+</html>

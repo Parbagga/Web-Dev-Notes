@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playstation5_vs_Xbox360</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .main {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .split {
+            position: absolute;
+            width: 50%;
+            height: 100%
+        }
+
+        .split.left {
+            left: 0;
+            background: url('https://images.unsplash.com/photo-1607853202273-797f1c22a38e?auto=format&fit=crop&q=60&w=400&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGxheXN0YXRpb24lMjA1fGVufDB8fDB8fHww')no-repeat center center/cover;
+        }
+
+        .split.right {
+            right: 0;
+            background: url('https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&q=60&w=400&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBsYXlzdGF0aW9uJTIwNXxlbnwwfHwwfHx8MA%3D%3D') no-repeat center center/cover;
+        }
+        h1{
+            font-size:1.7rem;
+            color: #fff;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .btn{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-decoration: none;
+            color: #fff;
+            width: 12rem;
+            padding: 1rem;
+            border: 2px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .split.left::before{
+            content:"";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(63, 67, 258, .5);
+        }
+        .split.right::before{
+            content:"";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(43, 63, 119, .5);
+        }
+        @media only screen and (max-width:450px){
+            .split{
+                width:100%;
+                height:50vh;
+            }
+            .split.right{
+                margin-top:50vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="split left">
+            <h1>PLAYSTATION 5</h1>
+            <a class="btn" href="#">Read More</a>
+        </div>
+        <div class="split right">
+            <h1>XBOX 360</h1>
+            <a class="btn" href="#">Read More</a>
+        </div>
+    </div>
+</body>
+
+</html>
